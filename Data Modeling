@@ -1,0 +1,28 @@
+Steps for the Dimentional Modeling:
+
+Business value: Antibiotic resiatant causes in 6 types of antibiotics. 
+Graine: Frequency of the spesific type of the organism name, anttibiotic type, gene nama, and location country (of origin).
+
+Dimensions:
+
+1) Organism name
+
+2) Antibiotic type
+
+3) Gene name
+
+4) Location Country
+
+Fact Frequency:
+
+Frequency
+
+FK 1 Antibiotic name
+
+FK 2 Location Country
+
+FK 3 Gene name
+
+FK 4 Organism name
+
+
