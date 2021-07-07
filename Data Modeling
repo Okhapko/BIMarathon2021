@@ -5,13 +5,13 @@ Graine: Frequency of the spesific type of the organism name, anttibiotic type, g
 
 Dimensions:
 
-1) Organism name
+1) Organism 
 
-2) Antibiotic type
+2) Antibiotic
 
-3) Gene name
+3) Gene 
 
-4) Location Country
+4) Location 
 
 Fact Frequency:
 
@@ -25,4 +25,4 @@ FK 3 Gene name
 
 FK 4 Organism name
 
-
+Attribute Frequency
