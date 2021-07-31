@@ -2,11 +2,11 @@
 select *
 from fact_table
 ;
--- I create duplicate of 'Rifampicin' --
+-- Created one duplicate of 'Rifampicin' --
 INSERT INTO antibiotic_table (Antibiotic_name)
 VALUES ('Rifampicin')
 ;
--- I want to find duplicates in antibiotics --
+-- Finded duplicates in antibiotics --
 Select antibiotic_name
 ,COUNT(*) as CNT
 From antibiotic_table
@@ -28,15 +28,15 @@ SELECT *
 FROM cte
 WHERE row_num >1
 ;
--- I want to secelt antibiotic and organism based on gene mutation. 
+-- I want to select antibiotic and organism based on gene mutation. Every time I see the gene_id NULLIF it will replace to mutation (helping me to remode nullif - only useful).
 select
-ANTIBIOTIC_id,
-ORGANISM_id,
-NULLIF (Gene_id, 'Mutation') AS Gene
+ANTIBIOTIC_name,
+ORGANISM_name,
+NULLIF (Gene_name, 'Mutation') AS Gene
 from
 fact_table
 ;
--- COALESCE. I want to know typeas of antibiotic and organism based on gene mutation (in differenct way).
+-- COALESCE. I want to know typeas of antibiotic and organism based on gene mutation (in differenct way). (find the ANSWER)
 select
 ANTIBIOTIC_id,
 ORGANISM_id,
